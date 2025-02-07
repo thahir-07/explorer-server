@@ -2,8 +2,10 @@ const express=require('express')
 const app=express()
 export const router=express.Router()
 const cors = require("cors");
-require("dotenv").config();
+import dotenv from 'dotenv';
+dotenv.config();
 const PORT=process.env.PORT || 5000
+
 import bodyParser from "body-parser";
 import { NextFunction, Request, Response } from "express";
 const fileUpload = require("express-fileupload");
